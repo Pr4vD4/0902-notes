@@ -21,13 +21,13 @@ class LoginForm extends Component
         'password.required' => 'Введите пароль',
     ];
 
-    public function login()
+    public function handleLogin()
     {
         $credentials = $this->validate();
 
         if (Auth::attempt($credentials, $this->remember)) {
             session()->regenerate();
-            return $this->redirect('/diary', navigate: true);
+            return $this->redirect(route('diary'), navigate: true);
         }
 
         $this->addError('login', 'Неверный логин или пароль');

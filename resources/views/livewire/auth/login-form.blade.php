@@ -1,7 +1,7 @@
 <div class="bg-white p-8 rounded-lg shadow-md">
     <h2 class="text-2xl font-bold text-center text-primary mb-8">Вход</h2>
 
-    <form wire:submit="login" class="space-y-6">
+    <form wire:submit="handleLogin" class="space-y-6">
         <!-- Логин -->
         <div>
             <label for="login" class="block text-sm font-medium text-gray-700">Логин</label>

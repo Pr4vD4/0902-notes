@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import 'sweetalert2/dist/sweetalert2.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Кастомизация стилей SweetAlert если нужно */
+.swal2-popup {
+    font-size: 0.9rem;
+}
+
+.swal2-toast {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+}
